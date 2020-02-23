@@ -1,0 +1,483 @@
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.757, 18918121444, testhost.x86.exe, DefaultEngineInvoker.Invoke: Testhost process started with args :[--port, 50920],[--endpoint, 127.0.0.1:050920],[--role, client],[--parentprocessid, 11624],[--diag, C:\Users\emglu\AppData\Local\Temp\TestPlatformLogs\11572_02_23_2020_19_33_30\logs.host.20-02-23_19-33-33_62339_6.txt],[--tracelevel, 4],[--telemetryoptedin, true]
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.761, 18918142369, testhost.x86.exe, DefaultEngineInvoker: Using Application Configuration: '<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+  <runtime>
+    <legacyUnhandledExceptionPolicy enabled="1" />
+    <legacyCorruptedStateExceptionsPolicy enabled="true" />
+    <!-- To get stacktrace information for portable and embedded pdbs when net472 installed on machine.
+          More details https://github.com/dotnet/designs/blob/master/accepted/diagnostics/debugging-with-symbols-and-sources.md#stack-traces -->
+    <AppContextSwitchOverrides value="Switch.System.Diagnostics.IgnorePortablePDBsInStackTraces=false" />
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <probing privatePath="Extensions" />
+      <!-- Test adapters compiled against version 11-14, need to be redirected to version 15. -->
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestPlatform.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-14.0.0.0" newVersion="15.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.TestWindow.Interfaces" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="11.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.UnitTestFramework" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.1.0.0" newVersion="10.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Resource" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ControllerObject" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.ExecutionCommon" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Common" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="10.0.0.0-15.0.0.0" newVersion="16.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.diagnostics>
+    <switches>
+      <add name="TpTraceLevel" value="0" />
+    </switches>
+  </system.diagnostics>
+  <appSettings>
+    <!--<add key="ExecutionThreadApartmentState" value ="MTA"/>-->
+    <!--<add key="TraceLogMaxFileSizeInKb" value ="10240"/>-->
+    <!-- MsTest Adapter Specific AppSettings -->
+    <!-- This flag is added to support test execution for net35 tests through TMI adapter. -->
+    <add key="TestProjectRetargetTo35Allowed" value="true" />
+  </appSettings>
+</configuration>'
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.761, 18918149836, testhost.x86.exe, DefaultEngineInvoker.SetParentProcessExitCallback: Monitoring parent process with id: '11624'
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.766, 18918198150, testhost.x86.exe, DefaultEngineInvoker.GetConnectionInfo: Initialize communication on endpoint address: '127.0.0.1:050920'
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.772, 18918255194, testhost.x86.exe, SocketClient.Start: connecting to server endpoint: 127.0.0.1:050920
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:33:33.775, 18918282287, testhost.x86.exe, DefaultEngineInvoker.Invoke: Start Request Processing.
+TpTrace Information: 0 : 2204, 7, 2020/02/23, 19:33:33.776, 18918294346, testhost.x86.exe, SocketClient.OnServerConnected: connected to server endpoint: 127.0.0.1:050920
+TpTrace Information: 0 : 2204, 9, 2020/02/23, 19:33:33.777, 18918308182, testhost.x86.exe, DefaultEngineInvoker.StartProcessingAsync: Connected to vstest.console, Starting process requests.
+TpTrace Verbose: 0 : 2204, 7, 2020/02/23, 19:33:33.777, 18918308916, testhost.x86.exe, Connected to server, and starting MessageLoopAsync
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:33.779, 18918328255, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:33.779, 18918329489, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:33:33.931, 18919845951, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (ProtocolVersion) -> 2
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:33.989, 18920427738, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Logging TestHost Diagnostics in file: C:\\Users\\emglu\\AppData\\Local\\Temp\\TestPlatformLogs\\11572_02_23_2020_19_33_30\\logs.host.20-02-23_19-33-33_62339_6.txt"}}
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:33.990, 18920429949, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:33.990, 18920431246, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:33:33.995, 18920483746, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestExecution.Initialize) -> [
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.TestPlatform.Extensions.EventLogCollector.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.TestPlatform.TestHostRuntimeProvider.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.Coverage.Interop.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll",
+  "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\Extensions\\Microsoft.VisualStudio.TraceDataCollector.dll",
+  "C:\\USERS\\EMGLU\\APPDATA\\LOCAL\\MICROSOFT\\VISUALSTUDIO\\16.0_5D0C6C56\\EXTENSIONS\\DN15CJRT.JZR\\NUnit3.TestAdapter.dll"
+]
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:33:33.995, 18920485727, testhost.x86.exe, Execution Session Initialize.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:34.009, 18920621106, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:34.009, 18920622264, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:33:34.013, 18920660912, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestExecution.StartWithTests) -> {
+  "Tests": [
+    {
+      "Id": "ae4dd56e-71dd-fa88-4ff3-c713c2d6f9be",
+      "FullyQualifiedName": "BCQAExam.Features.LoginFeature.LogIn",
+      "DisplayName": "LogIn",
+      "ExecutorUri": "executor://nunit3testexecutor/",
+      "Source": "C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll",
+      "CodeFilePath": null,
+      "LineNumber": 0,
+      "Properties": []
+    },
+    {
+      "Id": "a80ba568-2bbd-aa73-7d47-b71a0cda4bcb",
+      "FullyQualifiedName": "BCQAExam.Features.RegisterFeature.RegisterNewUser",
+      "DisplayName": "RegisterNewUser",
+      "ExecutorUri": "executor://nunit3testexecutor/",
+      "Source": "C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll",
+      "CodeFilePath": null,
+      "LineNumber": 0,
+      "Properties": []
+    }
+  ],
+  "RunSettings": "<RunSettings>\r\n  <RunConfiguration>\r\n    <ResultsDirectory>C:\\Eugene\\tmp\\BCQAExam_20200223\\TestResults</ResultsDirectory>\r\n    <SolutionDirectory>C:\\Eugene\\tmp\\BCQAExam_20200223\\</SolutionDirectory>\r\n    <TargetPlatform>X86</TargetPlatform>\r\n    <CollectSourceInformation>False</CollectSourceInformation>\r\n    <TargetFrameworkVersion>.NETFramework,Version=v4.6.1</TargetFrameworkVersion>\r\n    <DesignMode>True</DesignMode>\r\n  </RunConfiguration>\r\n</RunSettings>",
+  "TestExecutionContext": {
+    "FrequencyOfRunStatsChangeEvent": 10,
+    "RunStatsChangeEventTimeout": "00:00:01.5000000",
+    "InIsolation": false,
+    "KeepAlive": false,
+    "AreTestCaseLevelEventsRequired": false,
+    "IsDebug": false,
+    "TestCaseFilter": null,
+    "FilterOptions": null
+  },
+  "Package": null
+}
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:33:34.013, 18920662556, testhost.x86.exe, Execution started.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.017, 18920702332, testhost.x86.exe, TestExecutorService: Loading the extensions
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.020, 18920729191, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestExecutorPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ITestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.022, 18920748114, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.022, 18920749627, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.022, 18920750939, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.024, 18920769955, testhost.x86.exe, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.024, 18920775978, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.024, 18920777235, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.025, 18920778378, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.025, 18920779632, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.025, 18920780923, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920790962, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920792352, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920793528, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920794757, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920795900, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.026, 18920797047, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920798273, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920799477, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920800642, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920801813, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920803036, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920804185, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920805425, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920806623, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.027, 18920807789, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.028, 18920808992, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.028, 18920810142, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.028, 18920811275, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.028, 18920812398, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:34.048, 18921015271, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.261, 18923155428, testhost.x86.exe, AssemblyResolver.OnResolve: NUnit3.TestAdapter: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.271, 18923253603, testhost.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, from path: C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.280, 18923344381, testhost.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.282, 18923356531, testhost.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.282, 18923357576, testhost.x86.exe, TestPluginCache: Executors are 'executor://CodedWebTestAdapter/v1,executor://GenericTestAdapter/v1,executor://OrderedTestAdapter/v1,executor://MSTestAdapter/v1,executor://WebTestAdapter/v1,executor://CppUnitTestExecutor/v1,executor://UAPCppExecutorIdentifier,executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.282, 18923358496, testhost.x86.exe, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.282, 18923359302, testhost.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.290, 18923441516, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.CodedWebTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.290, 18923443227, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.CodedWebTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.290, 18923444700, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.GenericTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.291, 18923446458, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.GenericTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.291, 18923447916, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.OrderedTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.291, 18923449525, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.OrderedTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.291, 18923450957, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.MSTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.292, 18923460576, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.MSTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.292, 18923462155, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.WebTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.292, 18923463720, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.WebTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.292, 18923465224, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.TestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.297, 18923507330, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.TestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.297, 18923508487, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.DummyUWPCppTestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.297, 18923509955, testhost.x86.exe, TestExecutorExtensionManager: Loading executor Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.DummyUWPCppTestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.298, 18923521891, testhost.x86.exe, AssemblyResolver.OnResolve: NUnit3.TestAdapter, Version=3.16.1.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.299, 18923529771, testhost.x86.exe, AssemblyResolver.OnResolve: Resolved assembly: NUnit3.TestAdapter, Version=3.16.1.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, from path: C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.299, 18923531255, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.300, 18923537580, testhost.x86.exe, TestExecutorExtensionManager: Loading executor NUnit.VisualStudio.TestAdapter.NUnit3TestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.300, 18923538513, testhost.x86.exe, TestExecutorService: Loaded the executors
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.301, 18923551417, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies endswith: TestAdapter.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.ExtensionFramework.Utilities.TestSettingsProviderPluginInformation TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.Adapter.ISettingsProvider
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.301, 18923555144, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923556459, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923557787, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923561669, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TestWindow,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923562723, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923563559, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Filtered extension paths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.302, 18923564679, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added default extension paths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923565976, testhost.x86.exe, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923567200, testhost.x86.exe, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.TestPlatform.TestHostRuntimeProvider.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.ArchitectureTools.PEReader.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.Coverage.Interop.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.CodedWebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.GenericTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Html.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.OrderedTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.TmiAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.Trx.TestLogger.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestPlatform.Extensions.WebTestAdapter.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.ComInterfaces.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.CppUnitTestFramework.CppUnitTestExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.MediaRecorder.Model.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorderCollector.dll
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions\Microsoft.VisualStudio.TraceDataCollector.dll
+C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR\NUnit3.TestAdapter.dll
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923568932, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923570113, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923571235, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923572356, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923573507, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.303, 18923574622, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923575803, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923576965, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923578254, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923579374, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923580491, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923581643, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923582768, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923583886, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.304, 18923585004, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.305, 18923586192, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.305, 18923587328, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.305, 18923588434, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform\Extensions,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.305, 18923589557, testhost.x86.exe, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\USERS\EMGLU\APPDATA\LOCAL\MICROSOFT\VISUALSTUDIO\16.0_5D0C6C56\EXTENSIONS\DN15CJRT.JZR,C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\TestPlatform
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.307, 18923610109, testhost.x86.exe, TestPluginCache: Discovered the extensions using extension path ''.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.307, 18923611090, testhost.x86.exe, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.307, 18923611927, testhost.x86.exe, TestPluginCache: Executors are 'executor://CodedWebTestAdapter/v1,executor://GenericTestAdapter/v1,executor://OrderedTestAdapter/v1,executor://MSTestAdapter/v1,executor://WebTestAdapter/v1,executor://CppUnitTestExecutor/v1,executor://UAPCppExecutorIdentifier,executor://NUnit3TestExecutor'.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.307, 18923612816, testhost.x86.exe, TestPluginCache: Setting providers are 'WebTestRunConfiguration,LegacySettings,MSTest'.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.307, 18923613678, testhost.x86.exe, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923628121, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.TmiHelper.WebTestSettingsProvider
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923629742, testhost.x86.exe, SettingsProviderExtensionManager: Loading settings provider Microsoft.VisualStudio.TestPlatform.Extensions.TmiHelper.WebTestSettingsProvider
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923630809, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.TmiHelper.LegacySettingsProvider
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923632193, testhost.x86.exe, SettingsProviderExtensionManager: Loading settings provider Microsoft.VisualStudio.TestPlatform.Extensions.TmiHelper.LegacySettingsProvider
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923633587, testhost.x86.exe, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.MSTestSettingsProvider
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.309, 18923634962, testhost.x86.exe, SettingsProviderExtensionManager: Loading settings provider Microsoft.VisualStudio.TestPlatform.Extensions.VSTestIntegration.MSTestSettingsProvider
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.310, 18923635954, testhost.x86.exe, TestExecutorService: Loaded the settings providers
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.310, 18923636740, testhost.x86.exe, TestExecutorService: Loaded the extensions
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.322, 18923759282, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.323, 18923767038, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Failed to load assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.324, 18923775442, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.324, 18923776444, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolved from cache.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.325, 18923787286, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.325, 18923794654, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Failed to load assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.326, 18923796360, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:33:34.326, 18923797344, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.Common.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolved from cache.
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.385, 18924392418, testhost.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Running tests for executor://NUnit3TestExecutor
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:33:34.386, 18924398617, testhost.x86.exe, BaseRunTests.TryToRunInSTAThread: Using STA thread to call adapter API.
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:33:34.403, 18924567172, testhost.x86.exe, NUnit Adapter 3.16.1.0: Test execution started
+TpTrace Verbose: 0 : 2204, 12, 2020/02/23, 19:33:34.403, 18924568683, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution started"}}
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:33:34.447, 18925007440, testhost.x86.exe, Running selected tests in C:\Eugene\tmp\BCQAExam_20200223\BCQAExam\bin\Debug\BCQAExam.dll
+TpTrace Verbose: 0 : 2204, 12, 2020/02/23, 19:33:34.447, 18925008871, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"Running selected tests in C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll"}}
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:33:34.467, 18925207809, testhost.x86.exe, AssemblyResolver.OnResolve: Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756: Resolving assembly.
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:33:34.468, 18925214658, testhost.x86.exe, AssemblyResolver.OnResolve: Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756: Failed to load assembly.
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:33:34.874, 18929278058, testhost.x86.exe,    NUnit3TestExecutor converted 2 of 2 NUnit test cases
+TpTrace Verbose: 0 : 2204, 12, 2020/02/23, 19:33:34.874, 18929279646, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"   NUnit3TestExecutor converted 2 of 2 NUnit test cases"}}
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:35.048, 18931008640, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:36.048, 18941009546, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:36.972, 18950255981, testhost.x86.exe, TestExecutionRecorder.RecordStart: Starting test: BCQAExam.Features.LoginFeature.LogIn.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:36.978, 18950320146, testhost.x86.exe, Sending test run statistics
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:37.006, 18950596651, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[],"TestRunStatistics":{"ExecutedTests":0,"Stats":{}},"ActiveTests":[{"Id":"ae4dd56e-71dd-fa88-4ff3-c713c2d6f9be","FullyQualifiedName":"BCQAExam.Features.LoginFeature.LogIn","DisplayName":"LogIn","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:37.006, 18950599373, testhost.x86.exe, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:37.048, 18951010041, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:38.048, 18961010954, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:39.048, 18971011685, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:40.048, 18981012309, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:41.048, 18991013116, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:42.048, 19001013790, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:43.048, 19011014567, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:44.048, 19021015193, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:45.048, 19031015848, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:46.048, 19041016550, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:47.048, 19051017344, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:48.049, 19061018090, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:48.930, 19069838072, testhost.x86.exe, TestExecutionRecorder.RecordEnd: test: BCQAExam.Features.LoginFeature.LogIn execution completed.
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:33:48.931, 19069845646, testhost.x86.exe, InProgressTests is null
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:48.932, 19069852354, testhost.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: BCQAExam.Features.LoginFeature.LogIn.
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:33:48.934, 19069874425, testhost.x86.exe, InProgressTests is null
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.937, 19069903191, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.938, 19069911122, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Failed to load assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.938, 19069916803, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.938, 19069917806, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en-GB, PublicKeyToken=b03f5f7f11d50a3a: Resolved from cache.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.939, 19069928948, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.940, 19069936587, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Failed to load assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.940, 19069938344, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolving assembly.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.940, 19069939270, testhost.x86.exe, AssemblyResolver.OnResolve: Microsoft.VisualStudio.TestPlatform.ObjectModel.resources, Version=15.0.0.0, Culture=en, PublicKeyToken=b03f5f7f11d50a3a: Resolved from cache.
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:33:48.941, 19069945333, testhost.x86.exe, TestRunCache: No test found corresponding to testResult 'LogIn       Passed
+  Test Messages:
+  StdOutMsgs:
+Given I am in the home page of the system
+-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (5.5s)
+When I enter my username and password
+  --- table step argument ---
+  | UserName                | Password |
+  | lorenad@bizcover.com.au | test1234 |
+-> done: LoginSteps.WhenIEnterMyUsernameAndPassword(<table>) (3.9s)
+Then I should be redirected to my Account Page
+-> done: LoginSteps.ThenIShouldBeRedirectedToMyAccountPage() (0.1s)
+' in inProgress list.
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:48.945, 19069986830, testhost.x86.exe, TestExecutionRecorder.RecordStart: Starting test: BCQAExam.Features.RegisterFeature.RegisterNewUser.
+TpTrace Information: 0 : 2204, 14, 2020/02/23, 19:33:48.945, 19069989171, testhost.x86.exe, Sending test run statistics
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:48.957, 19070108416, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.StatsChange","Payload":{"NewTestResults":[{"TestCase":{"Id":"ae4dd56e-71dd-fa88-4ff3-c713c2d6f9be","FullyQualifiedName":"BCQAExam.Features.LoginFeature.LogIn","DisplayName":"LogIn","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"LogIn","Messages":[{"Category":"StdOutMsgs","Text":"Given I am in the home page of the system\r\n-> done: LoginSteps.GivenIAmInTheHomePageOfTheSystem() (5.5s)\r\nWhen I enter my username and password\r\n  --- table step argument ---\r\n  | UserName                | Password |\r\n  | lorenad@bizcover.com.au | test1234 |\r\n-> done: LoginSteps.WhenIEnterMyUsernameAndPassword(<table>) (3.9s)\r\nThen I should be redirected to my Account Page\r\n-> done: LoginSteps.ThenIShouldBeRedirectedToMyAccountPage() (0.1s)\r\n"}],"ComputerName":"DESKTOP-AKLAD77","Duration":"00:00:11.9480000","StartTime":"2020-02-23T08:33:36+00:00","EndTime":"2020-02-23T08:33:48+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":1,"Stats":{"Passed":1}},"ActiveTests":[{"Id":"a80ba568-2bbd-aa73-7d47-b71a0cda4bcb","FullyQualifiedName":"BCQAExam.Features.RegisterFeature.RegisterNewUser","DisplayName":"RegisterNewUser","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]}]}}
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:48.958, 19070110646, testhost.x86.exe, TestRunCache: OnNewTestResult: Notified the onCacheHit callback.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:49.049, 19071018821, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:50.049, 19081019586, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:51.049, 19091020299, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:52.049, 19101020917, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:53.049, 19111021834, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:54.049, 19121022442, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:55.049, 19131023038, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:56.049, 19141023805, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:57.049, 19151024515, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:58.049, 19161025161, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:33:58.411, 19164642414, testhost.x86.exe, ==> Note randomly generated email for future reference: VkxRzwm@msasrgbh.iys
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:33:58.411, 19164644054, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":1,"Message":"==> Note randomly generated email for future reference: VkxRzwm@msasrgbh.iys"}}
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:33:59.049, 19171025887, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:00.049, 19181026748, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:01.049, 19191027257, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:02.050, 19201027996, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:03.050, 19211028887, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:04.050, 19221029574, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:05.050, 19231030235, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:06.050, 19241030952, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:07.050, 19251031743, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.050, 19261032480, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: Polling on remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:34:08.709, 19267629847, testhost.x86.exe, TestExecutionRecorder.RecordEnd: test: BCQAExam.Features.RegisterFeature.RegisterNewUser execution completed.
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:34:08.709, 19267631186, testhost.x86.exe, InProgressTests is null
+TpTrace Verbose: 0 : 2204, 14, 2020/02/23, 19:34:08.709, 19267632110, testhost.x86.exe, TestExecutionRecorder.RecordResult: Received result for test: BCQAExam.Features.RegisterFeature.RegisterNewUser.
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:34:08.709, 19267634161, testhost.x86.exe, InProgressTests is null
+TpTrace Warning: 0 : 2204, 14, 2020/02/23, 19:34:08.709, 19267635350, testhost.x86.exe, TestRunCache: No test found corresponding to testResult 'RegisterNewUser  Passed
+  Test Messages:
+  StdOutMsgs:
+Given I am in the page allowing Registration
+-> done: RegisterNewUserSteps.GivenIAmInTheHomePageOfTheSystem() (5.6s)
+When I enter random username only
+-> done: RegisterNewUserSteps.WhenIEnterRandomUsernameOnly() (2.1s)
+Then I should be redirected to Registration Page
+-> done: RegisterNewUserSteps.ThenIShouldBeRedirectedToRegistrationPage() (0.0s)
+When I fill registration form and press Register
+  --- table step argument ---
+  | Name   | Lastname | Password | Address             | City      | State  | ZIP   | Mobile     |
+  | Lorena | De Canas | test1234 | 8101 Sabrina Street | Anchorage | Alaska | 99501 | 1234567899 |
+-> done: RegisterNewUserSteps.WhenIEnterRandomUsernameOnly(<table>) (5.3s)
+Then I should be redirected to my account page
+-> done: RegisterNewUserSteps.ShouldBeRedirectedToMyAccountPage() (0.1s)
+When I press Sign out link
+-> done: RegisterNewUserSteps.IPressSignOutLink() (2.2s)
+Then I should be redirected back to login page
+-> done: RegisterNewUserSteps.IShouldBeRedirectedBackToToLoginPage() (0.0s)
+When I login with random username generated earlier
+  --- table step argument ---
+  | Password |
+  | test1234 |
+-> done: RegisterNewUserSteps.WhenILogiWithRandomUsernameGeneratedEarlier(<table>) (2.1s)
+Then I again should be redirected to my account page
+-> done: RegisterNewUserSteps.AgainShouldBeRedirectedToMyAccountPage() (0.1s)
+' in inProgress list.
+TpTrace Information: 0 : 2204, 12, 2020/02/23, 19:34:08.764, 19268181479, testhost.x86.exe, NUnit Adapter 3.16.1.0: Test execution complete
+TpTrace Verbose: 0 : 2204, 12, 2020/02/23, 19:34:08.764, 19268183176, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestSession.Message","Payload":{"MessageLevel":0,"Message":"NUnit Adapter 3.16.1.0: Test execution complete"}}
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:34:08.770, 19268236679, testhost.x86.exe, BaseRunTests.RunTestInternalWithExecutors: Completed running tests for executor://NUnit3TestExecutor
+TpTrace Information: 0 : 2204, 3, 2020/02/23, 19:34:08.772, 19268259261, testhost.x86.exe, Sending test run complete
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:34:08.783, 19268366118, testhost.x86.exe, TestRequestHandler.SendData:  sending data from testhost: {"Version":2,"MessageType":"TestExecution.Completed","Payload":{"TestRunCompleteArgs":{"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Passed":2}},"IsCanceled":false,"IsAborted":false,"Error":null,"AttachmentSets":[],"ElapsedTimeInRunningTests":"00:00:34.3885092","Metrics":{"VS.TestRun.AdaptersDiscoveredCount":1,"VS.TestRun.TotalTestsRun.executor://nunit3testexecutor/":2,"VS.TestRun.TimeTakenToRun.executor://nunit3testexecutor/":34.3850792,"VS.TestRun.TimeTakenByAllAdapters":34.3850792,"VS.TestRun.TotalTests":2,"VS.TestRun.RunState":"Completed","VS.TestRun.AdaptersUsedCount":1}},"LastRunTests":{"NewTestResults":[{"TestCase":{"Id":"a80ba568-2bbd-aa73-7d47-b71a0cda4bcb","FullyQualifiedName":"BCQAExam.Features.RegisterFeature.RegisterNewUser","DisplayName":"RegisterNewUser","ExecutorUri":"executor://NUnit3TestExecutor","Source":"C:\\Eugene\\tmp\\BCQAExam_20200223\\BCQAExam\\bin\\Debug\\BCQAExam.dll","CodeFilePath":null,"LineNumber":0,"Properties":[]},"Attachments":[],"Outcome":1,"ErrorMessage":null,"ErrorStackTrace":null,"DisplayName":"RegisterNewUser","Messages":[{"Category":"StdOutMsgs","Text":"Given I am in the page allowing Registration\r\n-> done: RegisterNewUserSteps.GivenIAmInTheHomePageOfTheSystem() (5.6s)\r\nWhen I enter random username only\r\n-> done: RegisterNewUserSteps.WhenIEnterRandomUsernameOnly() (2.1s)\r\nThen I should be redirected to Registration Page\r\n-> done: RegisterNewUserSteps.ThenIShouldBeRedirectedToRegistrationPage() (0.0s)\r\nWhen I fill registration form and press Register\r\n  --- table step argument ---\r\n  | Name   | Lastname | Password | Address             | City      | State  | ZIP   | Mobile     |\r\n  | Lorena | De Canas | test1234 | 8101 Sabrina Street | Anchorage | Alaska | 99501 | 1234567899 |\r\n-> done: RegisterNewUserSteps.WhenIEnterRandomUsernameOnly(<table>) (5.3s)\r\nThen I should be redirected to my account page\r\n-> done: RegisterNewUserSteps.ShouldBeRedirectedToMyAccountPage() (0.1s)\r\nWhen I press Sign out link\r\n-> done: RegisterNewUserSteps.IPressSignOutLink() (2.2s)\r\nThen I should be redirected back to login page\r\n-> done: RegisterNewUserSteps.IShouldBeRedirectedBackToToLoginPage() (0.0s)\r\nWhen I login with random username generated earlier\r\n  --- table step argument ---\r\n  | Password |\r\n  | test1234 |\r\n-> done: RegisterNewUserSteps.WhenILogiWithRandomUsernameGeneratedEarlier(<table>) (2.1s)\r\nThen I again should be redirected to my account page\r\n-> done: RegisterNewUserSteps.AgainShouldBeRedirectedToMyAccountPage() (0.1s)\r\n"}],"ComputerName":"DESKTOP-AKLAD77","Duration":"00:00:19.7820000","StartTime":"2020-02-23T08:33:48+00:00","EndTime":"2020-02-23T08:34:08+00:00","Properties":[]}],"TestRunStatistics":{"ExecutedTests":2,"Stats":{"Passed":2}},"ActiveTests":[]},"RunAttachments":[],"ExecutorUris":["executor://nunit3testexecutor/"]}}
+TpTrace Verbose: 0 : 2204, 3, 2020/02/23, 19:34:08.783, 19268369874, testhost.x86.exe, BaseRunTests.RunTests: Run is complete.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.785, 19268389097, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: NotifyDataAvailable remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.785, 19268391134, testhost.x86.exe, TestRequestHandler.ProcessRequests: received message: (TestSession.Terminate) -> null
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.785, 19268392077, testhost.x86.exe, Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:34:08.786, 19268396417, testhost.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:050920
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:34:08.786, 19268397373, testhost.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.786, 19268397501, testhost.x86.exe, SocketClient.Stop: Stop communication from server endpoint: 127.0.0.1:050920
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.786, 19268399014, testhost.x86.exe, SocketClient: Stop: Cancellation requested. Stopping message loop.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.786, 19268399853, testhost.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.786, 19268400757, testhost.x86.exe, Closing the connection !
+TpTrace Information: 0 : 2204, 8, 2020/02/23, 19:34:08.786, 19268404437, testhost.x86.exe, SocketClient.PrivateStop: Stop communication from server endpoint: 127.0.0.1:050920, error:
+TpTrace Verbose: 0 : 2204, 1, 2020/02/23, 19:34:08.786, 19268399449, testhost.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Information: 0 : 2204, 1, 2020/02/23, 19:34:08.787, 19268407093, testhost.x86.exe, Testhost process exiting.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.787, 19268408209, testhost.x86.exe, LengthPrefixCommunicationChannel.Dispose: Dispose reader and writer.
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.787, 19268409240, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
+TpTrace Verbose: 0 : 2204, 8, 2020/02/23, 19:34:08.787, 19268409240, testhost.x86.exe, TcpClientExtensions.MessageLoopAsync: exiting MessageLoopAsync remoteEndPoint: 127.0.0.1:50920 localEndPoint: 127.0.0.1:50921
